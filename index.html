@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Surat Penyuluh Agama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto">
+        <!-- Selector Format -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-4">Format Surat Penyuluh Agama Islam</h1>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Format Surat:</label>
+            <select id="formatSelector" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                <option value="format01">Format 01 - Data Kelompok Sasaran</option>
+                <option value="formatA1">Format A1 - Instrument Data & Informasi</option>
+                <option value="formatA2">Format A2 - Identifikasi Isu Aktual</option>
+                <option value="formatA3">Format A3 - Pembentukan Kelompok Sasaran</option>
+                <option value="formatA4">Format A4 - Surat Tugas</option>
+                <option value="formatA5">Format A5 - Rencana Kerja Tahunan</option>
+                <option value="formatA6">Format A6 - Rencana Kerja Operasional</option>
+                <option value="formatB2">Format B2 - Laporan Tatap Muka</option>
+            </select>
+            <button onclick="window.print()" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+                Cetak / PDF
+            </button>
+        </div>
+
+        <!-- Format 01 -->
+        <div id="format01" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">DATA KELOMPOK SASARAN</h3>
+                <h4 class="text-base font-semibold">BIMBINGAN DAN PENYULUHAN KEAGAMAAN DAN PEMBANGUNAN</h4>
+                <p class="font-semibold">TAHUN ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Pangkat/Golongan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Tempat tugas</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                    <tr><td class="py-1">Kelompok Sasaran</td><td>:</td><td>Tingkat I / II / III / IV</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Nama Kelompok Sasaran</th>
+                            <th class="border border-gray-800 p-2">Nama Ketua Kelompok Sasaran</th>
+                            <th class="border border-gray-800 p-2">Alamat Kelompok Sasaran</th>
+                            <th class="border border-gray-800 p-2">Pokok Kegiatan</th>
+                            <th class="border border-gray-800 p-2">Jadwal Kegiatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">4.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">5.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <p>PPPK/Fungsional</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A1 - Instrument Data & Informasi -->
+        <div id="formatA1" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">INSTRUMENT DATA & INFORMASI</h3>
+                <p class="font-semibold">TAHUN ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Data & Informasi</th>
+                            <th class="border border-gray-800 p-2">Sumber Data</th>
+                            <th class="border border-gray-800 p-2">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A2 - Identifikasi Isu Aktual -->
+        <div id="formatA2" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">IDENTIFIKASI ISU AKTUAL</h3>
+                <p class="font-semibold">TAHUN ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Isu Aktual</th>
+                            <th class="border border-gray-800 p-2">Dampak Isu</th>
+                            <th class="border border-gray-800 p-2">Strategi Penanganan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A3 - Pembentukan Kelompok Sasaran -->
+        <div id="formatA3" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">PEMBENTUKAN KELOMPOK SASARAN</h3>
+                <p class="font-semibold">TAHUN ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Nama Kelompok</th>
+                            <th class="border border-gray-800 p-2">Ketua Kelompok</th>
+                            <th class="border border-gray-800 p-2">Jumlah Anggota</th>
+                            <th class="border border-gray-800 p-2">Alamat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A4 - Surat Tugas -->
+        <div id="formatA4" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">SURAT TUGAS</h3>
+                <p class="text-sm">Nomor: …………………………………</p>
+            </div>
+
+            <div class="mb-4 text-sm leading-relaxed">
+                <p class="mb-4">Dalam rangka pelaksanaan Bimbingan dan Penyuluhan Keagamaan dan Pembangunan, maka yang bertanda tangan di bawah ini:</p>
+                
+                <p class="font-bold mb-2">Pejabat Pemberi Tugas</p>
+                <table class="w-full mb-4">
+                    <tr><td class="w-1/4">Nama</td><td class="w-12">:</td><td>...............................................</td></tr>
+                    <tr><td>NIP</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Jabatan</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+
+                <p class="mb-2">Dengan ini memberikan tugas kepada:</p>
+
+                <p class="font-bold mb-2">Identitas Penyuluh Agama Islam</p>
+                <table class="w-full mb-4">
+                    <tr><td class="w-1/4">Nama Lengkap</td><td class="w-12">:</td><td>...............................................</td></tr>
+                    <tr><td>NIP</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Pangkat/Golongan</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Jabatan</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Tempat Tugas</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                    <tr><td>Kelompok Sasaran</td><td>:</td><td>Tingkat I / II / III / IV</td></tr>
+                </table>
+
+                <p class="font-bold mb-2">A. Dasar Penugasan</p>
+                <ol class="list-decimal ml-6 mb-4">
+                    <li>Program Kerja Tahunan (RKT) Penyuluh Agama Islam Tahun ………</li>
+                    <li>Rencana Kerja Operasional (RKO) Bulan ……… Tahun ………</li>
+                    <li>Hasil Identifikasi Wilayah dan Isu Keagamaan</li>
+                    <li>Pembentukan Kelompok Sasaran</li>
+                </ol>
+
+                <p class="font-bold mb-2">B. Maksud dan Tujuan</p>
+                <ul class="list-disc ml-6 mb-4">
+                    <li>Melaksanakan tugas bimbingan dan penyuluhan keagamaan sesuai kelompok sasaran yang ditetapkan</li>
+                    <li>Membantu pemerintah dalam pelayanan keagamaan, pembangunan, dan moderasi beragama</li>
+                    <li>Menindaklanjuti kebutuhan masyarakat sesuai hasil identifikasi isu</li>
+                </ul>
+
+                <p class="font-bold mb-2">C. Ruang Lingkup Penugasan</p>
+                <p class="mb-2">Meliputi pelaksanaan kegiatan berikut:</p>
+                <ol class="list-decimal ml-6 mb-4">
+                    <li>Bimbingan Tatap Muka / Majelis Taklim</li>
+                    <li>Bimbingan Melalui Media</li>
+                    <li>Konsultasi & Informasi Keagamaan</li>
+                    <li>Pendampingan Masyarakat</li>
+                    <li>Kerja Sama Sektoral</li>
+                    <li>Pengembangan Metode Bimluh</li>
+                </ol>
+
+                <p class="font-bold mb-2">D. Lokasi Pelaksanaan</p>
+                <table class="w-full mb-4">
+                    <tr><td class="w-1/4">Desa/Kelurahan</td><td class="w-12">:</td><td>...............................................</td></tr>
+                    <tr><td>Kecamatan</td><td>:</td><td>...............................................</td></tr>
+                    <tr><td>Kabupaten</td><td>:</td><td>Melawi</td></tr>
+                    <tr><td>Periode Tugas</td><td>:</td><td>Mulai tanggal .......... s.d .......... Tahun ........</td></tr>
+                </table>
+
+                <p class="mb-4">Demikian surat tugas ini dibuat untuk dilaksanakan dengan penuh tanggung jawab.</p>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <p>PPPK/Fungsional</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A5 - Rencana Kerja Tahunan -->
+        <div id="formatA5" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">RENCANA KERJA TAHUNAN (RKT)</h3>
+                <h4 class="text-base font-semibold">PENYULUH AGAMA ISLAM</h4>
+                <p class="font-semibold">TAHUN ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Pangkat/Golongan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Rencana Kegiatan</th>
+                            <th class="border border-gray-800 p-2">Target Kelompok Sasaran</th>
+                            <th class="border border-gray-800 p-2">Waktu Pelaksanaan</th>
+                            <th class="border border-gray-800 p-2">Hasil yang Diharapkan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format A6 - Rencana Kerja Operasional -->
+        <div id="formatA6" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">RENCANA KERJA OPERASIONAL (RKO)</h3>
+                <h4 class="text-base font-semibold">PENYULUH AGAMA ISLAM</h4>
+                <p class="font-semibold">BULAN: ............... TAHUN: ...............</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Pangkat/Golongan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Kegiatan</th>
+                            <th class="border border-gray-800 p-2">Target Kelompok Sasaran</th>
+                            <th class="border border-gray-800 p-2">Waktu</th>
+                            <th class="border border-gray-800 p-2">PIC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="border border-gray-800 p-2 text-center">1.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">2.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                        <tr><td class="border border-gray-800 p-2 text-center">3.</td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td><td class="border border-gray-800 p-2"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Format B2 - Laporan Tatap Muka -->
+        <div id="formatB2" class="format-content bg-white rounded-lg shadow-lg p-8 mb-6 hidden">
+            <div class="text-center border-b-2 border-gray-800 pb-4 mb-6">
+                <h2 class="text-lg font-bold">KEMENTERIAN AGAMA REPUBLIK INDONESIA</h2>
+                <h3 class="text-base font-semibold">KANTOR KEMENTERIAN AGAMA KABUPATEN MELAWI</h3>
+                <p class="text-sm">Jl. [Alamat Lengkap]</p>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-lg font-bold underline">DOKUMEN HASIL KERJA / BUKTI DUKUNG</h3>
+                <h4 class="text-base font-semibold">PELAKSANAAN KEGIATAN BIMBINGAN DAN PENYULUHAN AGAMA ISLAM</h4>
+                <h4 class="text-base font-semibold">TATAP MUKA</h4>
+                <p>Bulan: ………………… Tahun: . . . . . . . . . . . . . . .</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-bold mb-3 bg-gray-200 p-2">Identitas Penyuluh Agama</h4>
+                <table class="w-full text-sm">
+                    <tr><td class="w-1/4 py-1">Nama Lengkap</td><td class="w-12">:</td><td>.................</td></tr>
+                    <tr><td class="py-1">NIP</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Pangkat/Golongan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Jabatan</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Tempat tugas</td><td>:</td><td>.................</td></tr>
+                    <tr><td class="py-1">Unit Kerja</td><td>:</td><td>Kantor Kemenag Kab. Melawi</td></tr>
+                    <tr><td class="py-1">Kelompok Sasaran</td><td>:</td><td>Tingkat I/II/III/IV</td></tr>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse border border-gray-800 text-sm">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border border-gray-800 p-2">No.</th>
+                            <th class="border border-gray-800 p-2">Keterangan Kegiatan Tatap Muka</th>
+                            <th class="border border-gray-800 p-2">Link Foto Kegiatan Tatap Muka</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-800 p-2 text-center align-top">1</td>
+                            <td class="border border-gray-800 p-2">
+                                <p><strong>Tanggal Bimluh Tatap Muka:</strong> ............................</p>
+                                <p><strong>Tempat Bimluh Tatap Muka:</strong> ............................</p>
+                                <p><strong>Nama Kelompok Sasaran:</strong> ..............................</p>
+                            </td>
+                            <td class="border border-gray-800 p-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-800 p-2 text-center align-top">2</td>
+                            <td class="border border-gray-800 p-2">
+                                <p><strong>Tanggal Bimluh Tatap Muka:</strong> ............................</p>
+                                <p><strong>Tempat Bimluh Tatap Muka:</strong> ............................</p>
+                                <p><strong>Nama Kelompok Sasaran:</strong> ..............................</p>
+                            </td>
+                            <td class="border border-gray-800 p-2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between mt-12 text-sm">
+                <div class="text-center w-1/2">
+                    <p>Mengetahui</p>
+                    <p>Atasan Langsung,</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP:</p>
+                </div>
+                <div class="text-center w-1/2">
+                    <p>(Tempat Tugas...., Tanggal... Tahun.....)</p>
+                    <p>Penyuluh Agama Islam</p>
+                    <p>PPPK/Fungsional</p>
+                    <div class="h-16"></div>
+                    <p class="font-semibold">.........................</p>
+                    <p>NIP: ...............</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selector = document.getElementById('formatSelector');
+            const formats = document.querySelectorAll('.format-content');
+
+            selector.addEventListener('change', function() {
+                formats.forEach(format => format.classList.add('hidden'));
+                const selectedFormat = document.getElementById(this.value);
+                if (selectedFormat) {
+                    selectedFormat.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        @media print {
+            body {
+                background: white;
+            }
+            .bg-gray-100 {
+                background: white;
+            }
+            .shadow-lg {
+                box-shadow: none;
+            }
+            .format-content:not(.hidden) {
+                display: block !important;
+            }
+            .format-content.hidden {
+                display: none !important;
+            }
+            button, select, label {
+                display: none;
+            }
+        }
+    </style>
+</body>
+</html>
